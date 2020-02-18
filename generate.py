@@ -14,7 +14,7 @@ def create_a_sheet(workbook, sheetName):
     sheet.col(0).width = 256 * 20
     sheet.col(1).width = 256 * 20
     sheet.col(2).width = 256 * 20
-    # 添加标题
+    # add title
     sheet.write(0, 0, "编号")
     sheet.write(0, 1, "名称")
     sheet.write(0, 2, "地点")
@@ -34,7 +34,6 @@ def write_a_room_to_a_sheet(workbook, room):
         write_row(sheet, rowIndex, asset)
 
 
-# handle room list assets
 def handleRoomListAssets(workbook, roomsAssets):
     for room in roomsAssets:
         write_a_room_to_a_sheet(workbook, room)
@@ -49,18 +48,6 @@ def process(allAssets):
     # save to file
     myWorkbook.save("output.xls")
 
-
-# def get_mock_data():
-#     return [
-#         [
-#             {"code": "CBEX_7101_KZ_001", "name": "课桌", "location": "7101"},
-#             {"code": "CBEX_7101_KZ_002", "name": "课桌", "location": "7101"},
-#         ],
-#         [
-#             {"code": "CBEX_7102_DZ_001", "name": "凳子", "location": "7102"},
-#             {"code": "CBEX_7102_DZ_002", "name": "凳子", "location": "7102"},
-#         ],
-#     ]
 
 if __name__ == "__main__":
     allAssets = readJson.getDataSource()

@@ -2,16 +2,7 @@
 import json
 
 Prefix = "CBEX"
-DataFilePath = "./datalist.json"
-
-
-# room = {
-#     "location": "7101",
-#     "assets": [
-#         {"name": "课桌", "category": "KZ", "count": 10},
-#         {"name": "空调", "category": "KT", "count": 2},
-#     ],
-# }
+DataFilePath = "./data.json"
 
 
 def getDataForRoom(roomData):
