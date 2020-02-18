@@ -1,0 +1,32 @@
+[
+  {
+    "location": "7101",
+    "assets": [
+      {
+        "name": "课桌",
+        "category": "KZ",
+        "count": 10
+      },
+      {
+        "name": "空调",
+        "category": "KT",
+        "count": 2
+      }
+    ]
+  },
+  {
+    "location": "7102",
+    "assets": [
+      {
+        "name": "凳子",
+        "category": "DZ",
+        "count": 5
+      },
+      {
+        "name": "黑板",
+        "category": "HB",
+        "count": 2
+      }
+    ]
+  }
+]

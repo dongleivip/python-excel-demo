@@ -5,3 +5,6 @@ dist
 build
 *.spec
 __pycache__
+
+*.xls
+*.xlsx
